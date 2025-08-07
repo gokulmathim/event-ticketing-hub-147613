@@ -3,16 +3,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ticket_booking_frontend/main.dart';
 
 void main() {
-  testWidgets('App generation message displayed', (WidgetTester tester) async {
-    await tester.pumpWidget(const MyApp());
+  testWidgets('App main widget loads', (WidgetTester tester) async {
+    await tester.pumpWidget(const TicketBookingApp());
 
-    expect(find.text('ticket_booking_frontend App is being generated...'), findsOneWidget);
-    expect(find.byType(CircularProgressIndicator), findsOneWidget);
-  });
-
-  testWidgets('App bar has correct title', (WidgetTester tester) async {
-    await tester.pumpWidget(const MyApp());
-
-    expect(find.text('ticket_booking_frontend'), findsOneWidget);
+    // Verify that tab navigation is present after login flow would be handled.
+    // (Since AuthService is not logged in by default, login form should display)
+    expect(find.byType(TextField), findsWidgets); // Email/password fields
+    expect(find.text('Ticket Booking'), findsOneWidget);
   });
 }
