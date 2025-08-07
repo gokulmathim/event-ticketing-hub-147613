@@ -1,0 +1,1 @@
+ /home/kavia/workspace/code-generation/event-ticketing-hub-147613/ticket_booking_frontend/.dart_tool/flutter_build/9229785bfde0ab1748dfe9a98c877e20/native_assets.json: 
