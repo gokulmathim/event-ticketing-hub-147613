@@ -1,1 +1,3 @@
-# event-ticketing-hub-147613
+# Project Repository
+
+This is the initial README file for the project.
